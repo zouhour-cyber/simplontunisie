@@ -1,0 +1,30 @@
+:root {
+    --theme-color: #000;
+    --secondary-color:#a4082f ;
+    --prancipal-color:#ce0033;
+    --text-color: #57575c;
+    --white-color: #ffffff;
+    --grey-bg-color: #f1f5f8;
+    --font-title:Nunito Sans,sans-serif;
+}
+
+.bg-form{
+    background-image:  url('../img/bg-form.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+}
+.bg-form-2{
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+}
+.form-check-input:checked {
+    background-color: var(--prancipal-color);
+    border-color: var(--prancipal-color);
+}
+.form-check-input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(119, 16, 39, 0.5);}

@@ -1,0 +1,22 @@
+:root {
+    --theme-color: #000;
+    --secondary-color:#a4082f ;
+    --prancipal-color:#ce0033;
+    --text-color: #57575c;
+    --white-color: #ffffff;
+    --grey-bg-color: #f1f5f8;
+    --font-title:Nunito Sans,sans-serif;
+}
+
+.bg-contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url('../img/bg-contact.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 550px;
+}
+
+.bg-contact h1{
+    color:var(--white-color);
+
+}

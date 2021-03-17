@@ -1,0 +1,285 @@
+:root {
+--theme-color: #000;
+--secondary-color:#a4082f ;     
+--prancipal-color:#ce0033;     
+--text-color: #57575c;     
+--white-color: #ffffff;     
+--grey-bg-color: #f1f5f8;     
+--font-title:Nunito Sans,sans-serif; }
+
+ /************************image-front***********************/
+ .front{
+    width: 100%;
+    height: 38rem;
+ }
+  
+ #img-font .card-img-overlay{
+    background-color: var(--prancipal-color);
+    clip-path: polygon(0 0, 65% 0, 36% 100%, 0 100%);
+ }
+ #img-font .card{
+    border:none
+ }
+ #img-font .card-text{
+    margin-top: 65px;
+    font-weight: 700;
+    font-family: var(--font-title);
+    color: var(--white-color);
+    font-size: 50px;
+ }
+ #img-font .img-f{
+    width: 200px;
+    margin-left: 8rem;
+ }
+ /************************apropos**************/
+ h2{
+    font-family: var(--font-title);
+    text-align: center;
+    margin-top: 2rem;
+  
+ }
+ .bor-bt{
+    border-bottom: 5px solid  var(--prancipal-color);
+    width: 3rem;
+ }
+ .img-apropos{
+    width: 100%;
+    height: 18rem;
+ }
+ .border-carre{
+    border: 20px solid var(--prancipal-color) ;
+    width: 30rem;
+    height: 15rem;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    position: relative;
+  
+ }
+ .text-apropos{
+    border: 2px solid var(--prancipal-color);
+    background-color: var(--white-color);
+    margin: 0rem 7.5rem 0rem 3rem ;
+    padding: 2rem 1rem 5rem ;
+    position: absolute;
+    top: 57.5rem;
+ }
+ 
+
+ /*-------------style page formateur --------------*/
+ul{
+  list-style: none;
+
+}
+#formateur li{
+    margin:2em;
+    text-align:justify;
+}
+a{
+    text-decoration: none;
+}
+
+/*----------------logo devenir formateur----*/
+
+.log{
+    width:80%;
+    margin-top:12rem;
+}
+
+/*-------------background-banner devenir formateur ---*/
+.bg3{
+ background-color: var(--secondary-color);
+ height:80vh;
+ clip-path: polygon(0 0, 100% 0, 100% 72%, 55% 100%, 45% 100%, 0 69%);
+ color:white;
+}
+
+/*------------------position contenu bannner--------*/
+
+.content{
+   transform: translateX(50%);
+   transform: translatey(60%);
+
+}
+
+
+/*-------title -devenir formateur--*/
+.content  a h2 {
+   color:white;
+   font-size:2.5rem;
+   font-weight: bold;
+   animation:animationopac ease-in 6s;
+   animation-iteration-count: 5s;
+   transition: 0.3;
+}
+
+/*------------animation du titre h2--------*/
+
+@keyframes animationopac{
+   0% {
+     transform:scale(0.5);
+     opacity: 0.1;
+   }
+   100%{
+    
+      transform:tscale(1);
+
+     opacity:1;
+   }
+ }
+
+/*-------- style icon scroll-down-----------*/
+ .srcoll-icon a {
+   color:white;
+   margin-top:4rem;
+   font-size:3rem;
+   animation: animationFrames linear 1s;
+   animation-iteration-count: infinite;
+   }  
+
+/*-------- animation icon scroll-down-----------*/
+
+
+    @keyframes animationFrames{
+      0% {
+        transform:  translatey(0rem)  ;
+        opacity: 0.05;
+      }
+      50% {
+        transform:  translatey(0.5rem)  ;
+        opacity: 0.2;
+      }
+      100% {
+         transform:  translatey(1rem)  ;
+         opacity: 1;
+       }
+    }
+/*-----------------paragraphe devenir formateur -----*/  
+ #formateur h2{
+    font-weight: bold;
+ }
+
+/*---------------background paragraphe--------*/
+ .bg1{
+   
+   padding:1rem;
+   text-align: justify;
+   background-color:var(--secondary-color);    
+   color:white;
+   box-shadow: 5px 5px 8px #888888;
+
+ 
+}
+
+/*-----------carte temps de travail ----*/
+.modalité1{
+
+   box-shadow: 5px 5px 5px #888888;
+   padding:4em;
+   background-color:rgba(0,0,0,0.7);
+   text-align:justify;
+   color:white;
+
+}
+/*-----------carte contrat ----*/
+
+.modalité{
+   height: 20%;
+   background-color:rgba(163, 154, 154, 0.7);  
+   box-shadow: 0px 3px 3px 3px #9b9a9a;
+   padding:2em 1em;
+   text-align:justify;
+
+  
+}
+
+.bg4{
+   margin:20rem 0rem;
+   height:40rem;
+ 
+}
+
+.bg5{
+   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/_DSC7678.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   padding:3rem 0rem; 
+   text-orientation: center;
+   margin-top:5rem;
+}
+
+.margin{
+   margin:6rem 0rem;
+}
+
+
+@media screen and (max-width: 630px) {
+   .bg3{
+      height:40vh;
+      background-color: var(--secondary-color);
+      color:white;
+
+     
+   }
+   .bg3 a h2{
+      
+      font-size:1.2rem;
+   }
+   .content{
+      transform: translateX(50%);
+      transform: translatey(50%);
+   
+   }
+   
+   .srcoll-icon a{
+      color:white;
+      margin-top:5px;
+      animation: animationFrames linear 1s;
+      animation-iteration-count: infinite;
+      font-size:1.5rem;
+      } 
+
+      #formateur h2{
+         font-size:1.2rem;
+      }
+      #formateur ul li{
+         font-size:0.9rem;
+
+      }
+      
+      .log{
+         display: none;
+     }
+  
+     .modalité1{
+        margin:auto;
+        font-size:1rem;
+
+     }
+     .modalité{
+        margin:auto;
+        font-size:1rem;
+
+     }
+     .container h2{
+        font-size:1.5rem;
+        text-align: center;
+        font-weight:bold;
+     }
+
+     .container iframe{
+        margin-left:30px;
+        width:280px;
+        height:220px;
+        
+     }
+ }
+ .color-text{
+    color: var(--prancipal-color);
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+ .col-ti{
+    color: var(--white-color);
+    font-size: 50px;
+ }

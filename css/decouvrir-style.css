@@ -1,0 +1,17 @@
+:root {
+    --theme-color: #000;
+    --secondary-color:#a4082f ;
+    --prancipal-color:#ce0033;
+    --text-color: #57575c;
+    --white-color: #ffffff;
+    --grey-bg-color: #f1f5f8;
+    --font-title:Nunito Sans,sans-serif;
+}
+
+.title-ic{
+    font-size: 50px;
+}
+
+.cert p{
+   color: var(--text-color);
+}
